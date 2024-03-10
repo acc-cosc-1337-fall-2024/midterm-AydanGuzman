@@ -10,3 +10,18 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+
+TEST_CASE("Test get_value function")
+{
+	int value = 10;
+	get_value(value);
+	REQUIRE(value == 10);
+}
+
+TEST_CASE("Test get_value_reference funciton")
+{
+	int value = 10;
+	get_value_reference(value);
+	REQUIRE(value == 5);
+}
